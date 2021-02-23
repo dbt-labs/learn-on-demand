@@ -12,7 +12,7 @@ customer_orders as (
         count(order_id) as number_of_orders,
         sum(amount) as lifetime_value
     from orders
-    group by 1
+    group by 1 
 ),
 final as (
     select
