@@ -6,7 +6,9 @@ name: 'jaffle_shop'
 version: '1.0.0'
 config-version: 2
 vars:
-  test_timestamp: current_timestamp
+  batch_changed_date: current_timestamp
+  updated_by: 'dbt'
+  source: 'fms'
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
